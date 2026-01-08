@@ -242,7 +242,7 @@ Suggested references:
 
 ### February 09, 2026:
 
-- Lecture 07: [Git and GitHub Continued](https://raw.githack.com/danilofreire/datasci350/main/lectures/lecture-05/05-git-github.html).
+- Lecture 07: [More Git Commands, CLI and Git Practice](https://raw.githack.com/danilofreire/datasci350/main/lectures/lecture-07/07-practice.html).
 - [Kahoot Quiz](https://play.kahoot.it/v2/?quizId=0c41d485-25b6-44a6-a825-70854f1953cb&hostId=05eb977d-4f8a-440e-9e45-95212b29d103).
 
 ## Module 03: Literate Programming with Markdown, Quarto, and Jupyter
@@ -369,24 +369,17 @@ Suggested references:
 
 ### March 23, 2026:
 
-- Lecture 18: [SQL in Python: Connecting to Databases with Pandas](https://raw.githack.com/danilofreire/datasci350/main/lectures/lecture-18/18-sql-python.html).
+- Lecture 17: [SQL in Python: Connecting to Databases with Pandas](https://raw.githack.com/danilofreire/datasci350/main/lectures/lecture-17/17-sql-python.html).
 - [Kahoot Quiz](https://play.kahoot.it/v2/?quizId=ebd517ed-7bf1-447c-8e30-9c5abb75ef16&hostId=05eb977d-4f8a-440e-9e45-95212b29d103).
 
 ### March 25, 2026:
 
-- Lecture 17: [Quiz 03: AI-Assisted Programming and Cloud Computing (6%)](https://github.com/danilofreire/datasci350-quiz03/).
+- Lecture 18: [Quiz 03: AI-Assisted Programming and Cloud Computing (6%)](https://github.com/danilofreire/datasci350-quiz03/).
 - [**Assignment 08**](https://github.com/danilofreire/datasci350/blob/main/assignments/08-assignment.ipynb).
 
 ### March 30, 2026:
 
-- Lecture 18: [SQL in Python: Connecting to Databases with Pandas](https://raw.githack.com/danilofreire/datasci350/main/lectures/lecture-18/18-sql-python.html).
-- [Kahoot Quiz](https://play.kahoot.it/v2/?quizId=ebd517ed-7bf1-447c-8e30-9c5abb75ef16&hostId=05eb977d-4f8a-440e-9e45-95212b29d103).
-
-### April 01, 2026:
-
 - Lecture 19: [Merging Tables in SQL](https://raw.githack.com/danilofreire/datasci350/main/lectures/lecture-19/19-sql-tables.html).
-- **Assignment 08 due (5%).**
-- [**Assignment 09**](https://github.com/danilofreire/datasci350/blob/main/assignments/09-assignment.ipynb).
 - [Kahoot Quiz](https://play.kahoot.it/v2/?quizId=0d1466b5-ef43-4ab3-90aa-c46ae0554f19&hostId=05eb977d-4f8a-440e-9e45-95212b29d103).
 
 Suggested references:
@@ -398,9 +391,11 @@ Suggested references:
 
 ## Module 07: Parallel Computing
 
-### April 06, 2026:
+### April 01, 2026:
 
 - Lecture 20: [Parallel Computing with Dask](https://raw.githack.com/danilofreire/datasci350/main/lectures/lecture-20/20-parallel-computing.html).
+- **Assignment 08 due (5%).**
+- [**Assignment 09**](https://github.com/danilofreire/datasci350/blob/main/assignments/09-assignment.ipynb).
 
 Suggested references:
 
@@ -409,15 +404,9 @@ Suggested references:
 - [Coiled - Intro to Dask Tutorial (YouTube)](https://www.youtube.com/watch?v=z18qjLu-Mw4&list=PLeDTMczuyDQ8S73cdc0PrnTO80kfzpgz2&pp=iAQB).
 - Rocklin, M. (2017). [Dask: Flexible Library for Parallel Computing in Python](https://proceedings.scipy.org/articles/Majora-7b98e3ed-013). In Proceedings of the 16th Python in Science Conference (Vol. 126, p. 130).
 
-### April 08, 2026:
+### April 06, 2026:
 
-- Lecture 21: [Quiz 04: SQL Databases (6%)](https://github.com/danilofreire/datasci350-quiz04/).
-- **Assignment 09 due (5%).**
-- [**Assignment 10**](https://github.com/danilofreire/datasci350/blob/main/assignments/10-assignment.ipynb).
-
-### April 13, 2026:
-
-- Lecture 22: [Application: Parallelising Data Analysis with Dask and AutoML](https://raw.githack.com/danilofreire/datasci350/main/lectures/lecture-22/22-parallel-automl.html).
+- Lecture 21: [Application: Parallelising Data Analysis with Dask and AutoML](https://raw.githack.com/danilofreire/datasci350/main/lectures/lecture-22/22-parallel-automl.html).
 - [Kahoot Quiz](https://play.kahoot.it/v2/?quizId=a2403e39-2c84-473b-8e78-ea0889581b0c&hostId=05eb977d-4f8a-440e-9e45-95212b29d103).
 
 Suggested references:
@@ -426,12 +415,17 @@ Suggested references:
 - He, X., Zhao, K., & Chu, X. (2021). [AutoML: A Survey of the State-of-The-Art](https://www.sciencedirect.com/science/article/abs/pii/S0950705120307516). Knowledge-based systems, 212, 106622.
 - [TPOT Documentation](https://epistasislab.github.io/tpot/).
 
+### April 08, 2026:
+
+- Lecture 22: [Quiz 04: SQL Databases (6%)](https://github.com/danilofreire/datasci350-quiz04/).
+- **Assignment 09 due (5%).**
+- [**Assignment 10**](https://github.com/danilofreire/datasci350/blob/main/assignments/10-assignment.ipynb).
+
 ## Module 08: Containers and Reproducibility
 
-### April 15, 2026:
+### April 13, 2026:
 
 - Lecture 23: [Dependency Management, Virtual Environments, and Containers](https://raw.githack.com/danilofreire/datasci350/main/lectures/lecture-23/23-containers.html).
-- **Assignment 10 due (5%).**
 - [Kahoot Quiz](https://play.kahoot.it/v2/?quizId=8273ae04-10b2-4eee-9b8a-77f97ef43550&hostId=05eb977d-4f8a-440e-9e45-95212b29d103).
 
 Suggested references:
@@ -439,21 +433,23 @@ Suggested references:
 - [Docker Documentation](https://docs.docker.com/)
 - [ComposeCraft](https://github.com/composecraft/composecraft). A tool to help you manage, edit and share docker compose files in a GUI way.
 
-### April 20, 2026:
+### April 15, 2026:
 
 - Lecture 24: [Docker for Data Science](https://raw.githack.com/danilofreire/datasci350/main/lectures/lecture-24/24-docker.html).
+- **Assignment 10 due (5%).**
 - [Kahoot Quiz](https://play.kahoot.it/v2/?quizId=f2e51b56-a8f6-4178-8656-fec9d42679b1&hostId=05eb977d-4f8a-440e-9e45-95212b29d103).
+
+### April 20, 2026:
+
+- Lecture 25: [Course Review](https://raw.githack.com/danilofreire/datasci350/main/lectures/lecture-25/25-revision.html).
+- [Kahoot Quiz](https://play.kahoot.it/v2/?quizId=d19e2d39-f38c-4a1e-9d5d-c3113bd3ad36&hostId=05eb977d-4f8a-440e-9e45-95212b29d103).
 
 ### April 22, 2026:
 
-- Lecture 25: [Course Review and Q&A About Final Project](https://raw.githack.com/danilofreire/datasci350/main/lectures/lecture-25/25-revision.html).
-- [Kahoot Quiz](https://play.kahoot.it/v2/?quizId=d19e2d39-f38c-4a1e-9d5d-c3113bd3ad36&hostId=05eb977d-4f8a-440e-9e45-95212b29d103).
+- Lecture 26: [Quiz 05: Dask, Docker and Containers (6%)](https://github.com/danilofreire/datasci350-quiz05/).
 
 ### April 27, 2026:
 
-- Lecture 26: [Quiz 05: Dask, Docker and Containers (6%)](https://github.com/danilofreire/datasci350-quiz05/).
-
-### April 29, 2026:
-
 - No lectures.
+- Q&A session and final project work time.
 - [Final Project due (20%).](https://github.com/danilofreire/datasci350/tree/main/project)
