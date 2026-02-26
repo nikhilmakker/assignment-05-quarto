@@ -1,0 +1,75 @@
+---
+title: "World Development Indicators (2022) — Key Findings"
+author: "Nikhil Makker"
+format:
+  revealjs:
+    slide-number: true
+    transition: slide
+    theme: simple
+execute:
+  echo: false
+  warning: false
+  message: false
+bibliography: references.bib
+---
+
+## Introduction
+
+This presentation summarizes key findings from the 2022 World Development Indicators dataset [@worldbank].
+
+---
+
+## Data Overview
+
+```{python}
+import pandas as pd
+import matplotlib.pyplot as plt
+
+df = pd.read_csv("wdi.csv")
+df.shape
+```
+
+---
+
+## GDP per Capita vs Life Expectancy
+
+```{python}
+plot = df.dropna(subset=["gdp_per_capita", "life_expectancy"])
+
+plt.figure()
+plt.scatter(plot["gdp_per_capita"], plot["life_expectancy"])
+plt.title("Life Expectancy vs GDP per Capita (2022)")
+plt.xlabel("GDP per Capita")
+plt.ylabel("Life Expectancy")
+plt.show()
+```
+
+Higher income countries tend to exhibit higher life expectancy.
+
+---
+
+## Top 10 Countries by GDP per Capita
+
+```{python}
+top10 = df.dropna(subset=["gdp_per_capita"]).sort_values("gdp_per_capita", ascending=False).head(10)
+
+plt.figure()
+plt.barh(top10["country"], top10["gdp_per_capita"])
+plt.title("Top 10 Countries by GDP per Capita (2022)")
+plt.gca().invert_yaxis()
+plt.show()
+```
+
+These countries represent the highest income levels in 2022.
+
+---
+
+## Conclusion
+
+- Significant income differences exist globally.
+- Higher GDP per capita generally aligns with higher life expectancy.
+- Inflation and macroeconomic conditions vary widely across countries.
+
+---
+
+## References

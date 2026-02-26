@@ -1,0 +1,116 @@
+---
+title: "World Development Indicators (2022) Analysis"
+author: "Nikhil Makker"
+date: today
+format:
+  html:
+    toc: true
+    number-sections: true
+  pdf: default
+execute:
+  echo: false
+  warning: false
+  message: false
+bibliography: references.bib
+---
+
+# Introduction
+
+The data used in this analysis comes from the World Bank World Development Indicators (WDI) database [@worldbank].  
+We explore cross-country development patterns in 2022 using economic and health indicators.
+
+# Load Data
+
+```{python}
+import pandas as pd
+import matplotlib.pyplot as plt
+
+df = pd.read_csv("wdi.csv")
+df.shape
+```
+
+```{python}
+df.head()
+```
+
+# Exploratory Data Analysis
+
+## GDP per Capita
+
+```{python}
+df["gdp_per_capita"].describe()
+```
+
+GDP per capita varies substantially across countries in 2022, indicating large global income differences.
+
+## Life Expectancy
+
+```{python}
+df["life_expectancy"].describe()
+```
+
+Life expectancy shows less variation than income but still reflects differences in development levels.
+
+## Inflation Rate
+
+```{python}
+df["inflation_rate"].describe()
+```
+
+Inflation rates vary widely across countries, with some experiencing very high inflation.
+
+# Visualisations
+
+## GDP per Capita vs Life Expectancy
+
+```{python}
+#| label: fig-scatter
+#| fig-cap: "Life Expectancy vs GDP per Capita (2022)"
+
+plot = df.dropna(subset=["gdp_per_capita", "life_expectancy"])
+
+plt.figure()
+plt.scatter(plot["gdp_per_capita"], plot["life_expectancy"])
+plt.title("Life Expectancy vs GDP per Capita (2022)")
+plt.xlabel("GDP per Capita (current US$)")
+plt.ylabel("Life Expectancy (years)")
+plt.show()
+```
+
+As shown in @fig-scatter, countries with higher GDP per capita generally tend to have higher life expectancy.
+
+## Top 10 Countries by GDP per Capita
+
+```{python}
+#| label: fig-bar
+#| fig-cap: "Top 10 Countries by GDP per Capita (2022)"
+
+top10 = df.dropna(subset=["gdp_per_capita"]).sort_values("gdp_per_capita", ascending=False).head(10)
+
+plt.figure()
+plt.barh(top10["country"], top10["gdp_per_capita"])
+plt.title("Top 10 Countries by GDP per Capita (2022)")
+plt.xlabel("GDP per Capita (current US$)")
+plt.ylabel("Country")
+plt.gca().invert_yaxis()
+plt.show()
+```
+
+Figure @fig-bar shows the highest income countries in the dataset.
+
+# Summary Table
+
+```{python}
+#| label: tbl-summary
+
+summary = df[["gdp_per_capita", "life_expectancy", "inflation_rate"]].describe()
+summary
+```
+
+Table @tbl-summary presents key summary statistics for selected indicators.
+
+# Discussion
+
+Higher GDP per capita is generally associated with higher life expectancy, although there remains considerable variation across countries. Inflation levels vary significantly and may reflect macroeconomic instability in some regions. These patterns align with widely documented global development trends [@oecd_inflation].
+
+# References
